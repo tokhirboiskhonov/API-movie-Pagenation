@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="section">
+        <main class="main">
+            <div class="container">
+                <form class="movie__form">
+                    
+                    <input
+                    class="movie__input-search"
+                    type="text"
+                    placeholder="Search Movies"
+                    required>
+                    
+                    <button class="movie__button">Search</button>
+                    
+                </form>
+                
+                <div class="button-box">
+                    <button class="films__prev-button">Prev</button>
+                    <button class="films__next-button">Next</button>
+                </div>
+                
+                <ul class="movie__list"></ul>
+                
+                <template class="movie__template">
+                    <li class="movie__item">
+                        
+                        <img
+                        class="movie__poster"
+                        src="https://via.placeholder.com/350/350"
+                        alt="movies"
+                        onerror="this.onerror=null;this.src='https://picsum.photos/400/400'";
+                        width="400"
+                        height="400">
+                        
+                        <h2 class="movie__title">Shazam</h2>
+                        
+                        <p class="movie__year">2008</p>
+                        
+                        <p class="movie__type">movie</p>
+                        
+                        <p class="movie__id">tt0800080</p>
+                        
+                    </li>
+                </template>
+            </div>
+        </main>
+    </section>
+    <script src="./utils.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
